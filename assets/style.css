@@ -6,6 +6,8 @@
 body {
   font-size: 16px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
 }
 
 .hero {
@@ -130,5 +132,48 @@ ul > .nav_logo > img {
   margin-top: 15px;
   margin-left: -25px;
 }
-
 /*********** Hero section ended **************/
+hr {
+  height: .6em;
+  background-color: rgb(39, 39, 39);
+  border: none;
+}
+/*********** section1  **************/
+.section {
+  padding: 70px 140px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.section > .section_content {
+  width: 45%;
+}
+
+.section  h1 {
+  font-size: 3.3em;
+}
+
+.section  p {
+  margin-top: 10px;
+  font-size: 1.6em;
+}
+
+.section  img {
+  width: 480px;
+}
+
+.section > .section_img {
+  position: relative;
+}
+
+.section  video {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  top: 46%;
+  transform: translate(-50%, -50%);
+  width: 360px;
+}
+/*********** section1 ended **************/
