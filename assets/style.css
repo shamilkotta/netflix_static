@@ -230,3 +230,9 @@ hr {
   width: 300px !important;
 }
 /*********** section3 ended **************/
+
+/*********** section4 **************/
+.section4 > .section_content {
+  width: 55%;
+}
+/*********** section4 ended **************/
