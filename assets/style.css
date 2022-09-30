@@ -177,3 +177,10 @@ hr {
   width: 360px;
 }
 /*********** section1 ended **************/
+
+/*********** section3 **************/
+.section3_vd {
+  top: 34% !important;
+  width: 300px !important;
+}
+/*********** section3 ended **************/
