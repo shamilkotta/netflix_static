@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./img/bg.jpg');
+  box-sizing: border-box;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0; right: 0;
+  top: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.61);
+}
+
+.hero > nav, .hero > div {
+  position: relative;
+  z-index: 2;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  padding: 30px 60px 10px;
+}
+
+ul > .nav_logo {
+  width: 80%;
+}
+
+ul > .nav_logo > img {
+  width: 13%;
+}
+
+.nav-btn_lang {
+  background-color: transparent;
+  color: white;
+  padding: 8px 8px;
+  font-size: 1em;
+  border: 1px solid white;
+  border-radius: 3px;
+  margin-right: 15px;
+}
+
+.nav-btn_log {
+  background-color: #e81313;
+  color: white;
+  padding: 8px 18px;
+  font-size: 1em;
+  border: 1px solid #e81313;
+  border-radius: 3px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+}
+
+.content > h1 {
+  font-size: 3.5em;
+  text-align: center;
+  width: 55%;
+  line-height: 1em;
+}
+
+.content > h5 {
+  margin: 10px 0;
+  font-size: 2em;
+  font-weight: normal;
+}
+
+.content > p {
+  margin: 10px 0;
+  font-size: 1.2em;
+}
+
+.content > div {
+  margin-top: 5px;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.content  input {
+  font-size: 1.2em;
+  height: 35px;
+  padding: 8px 10px ;
+  border: none;
+}
+
+.content input:focus {
+  outline: none;
+}
+
+.content input[type="email"] {
+  margin-right: 0;
+  width: 70%;
+}
+
+.content input[type="button"] {
+  margin-left: -5px;
+  width: 25%;
+  background-color: #e81313;
+  cursor: pointer;
+  color: white;
+  height: 100%;
+}
+
+.content input[type="button"]:hover {
+  background-color: #f81919;
+}
+
+.content > div > label {
+  position: absolute;
+  margin-top: 15px;
+  margin-left: -25px;
+}
+
+/*********** Hero section ended **************/
