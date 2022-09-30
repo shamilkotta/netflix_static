@@ -101,29 +101,29 @@ ul > .nav_logo > img {
   font-size: 1.2em;
 }
 
-.content > div {
+.form-group {
   margin-top: 5px;
   width: 50%;
   box-sizing: border-box;
 }
 
-.content input {
+.form-group input {
   font-size: 1.2em;
   height: 35px;
   padding: 8px 10px;
   border: none;
 }
 
-.content input:focus {
+.form-group input:focus {
   outline: none;
 }
 
-.content input[type="email"] {
+.form-group input[type="email"] {
   margin-right: 0;
   width: 70%;
 }
 
-.content input[type="button"] {
+.form-group input[type="button"] {
   margin-left: -5px;
   width: 25%;
   background-color: #e81313;
@@ -132,11 +132,11 @@ ul > .nav_logo > img {
   height: 100%;
 }
 
-.content input[type="button"]:hover {
+.form-group input[type="button"]:hover {
   background-color: #f81919;
 }
 
-.content > div > label {
+.form-group > label {
   position: absolute;
   margin-top: 15px;
   margin-left: -25px;
@@ -244,6 +244,49 @@ hr {
 }
 /*********** section4 ended **************/
 
+
+.section5 {
+  width: 80%;
+  padding: 70px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.section5 > h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+}
+
+.section5 .qs {
+  font-size: 1.4em;
+  font-weight: normal !important;
+  position: relative;
+  width: 800px;
+  height: 70px;
+  background-color: rgb(59, 59, 59);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  cursor: pointer;
+  box-sizing: border-box;
+  margin: 10px 0;
+}
+
+.section5 .qs p:last-child {
+  font-weight: bold;
+}
+
+.section5 > p {
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
 /*********** footer **************/
 .footer {
   font-size: .8em;
