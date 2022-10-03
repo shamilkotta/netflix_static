@@ -272,7 +272,22 @@ hr {
   margin-bottom: 30px;
 }
 
+.section5 > p {
+  font-size: 1.2em;
+  margin: 45px 0 10px;
+}
+
 .section5 .qs {
+  overflow: hidden;
+}
+
+.section5 .qs input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+
+.section5  .qs > label {
   font-size: 1.4em;
   font-weight: normal !important;
   position: relative;
@@ -286,19 +301,33 @@ hr {
   padding: 10px 20px;
   cursor: pointer;
   box-sizing: border-box;
-  margin: 10px 0;
+  margin: 8px 0;
 }
 
-.section5 .qs p:last-child {
-  font-weight: bold;
+.section5  .qs > label::after {
+  content: url('./svg/faq.svg');
+  transform: rotate(45deg);
+  transition: transform 0.05s;
 }
 
-.section5 > p {
+.section5  .qs > .qs_content {
+  max-height: 0;
+  background-color: rgb(59, 59, 59);
+  padding: 0 15px;
   font-size: 1.2em;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 10px;
+  margin-top: -6px;
+  transition: height .35s;
 }
+
+.section5 .qs input:checked + label::after {
+  transform: rotate(0deg);
+}
+
+.section5 .qs input:checked ~ .qs_content {
+  max-height: 100vh;
+  padding: 10px 15px;
+}
+
 /*********** footer **************/
 .footer {
   font-size: .8em;
