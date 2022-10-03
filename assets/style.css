@@ -63,6 +63,18 @@ ul > .nav_logo > img {
   margin-right: 15px;
 }
 
+.nav-btn_lang > select {
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.nav-btn_lang > select > option {
+  color: white;
+  background-color: rgb(92, 92, 92);
+}
+
 .nav-btn_log {
   background-color: #e81313;
   color: white;
@@ -337,5 +349,17 @@ hr {
   border: 1px solid rgb(153, 153, 153);
   border-radius: 2px;
   margin-top: 10px;
+}
+
+.footer-btn_lang > select {
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.footer-btn_lang > select > option {
+  color: white;
+  background-color: rgb(92, 92, 92);
 }
 /*********** footer ended **************/
